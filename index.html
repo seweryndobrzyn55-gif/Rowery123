@@ -1,29 +1,176 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Świat Rowerów</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Świat Rowerów</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+    color:#333;
+}
+
+header{
+    background:url('https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=1600&q=80') center/cover;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+header h1{
+    font-size:60px;
+    background:rgba(0,0,0,0.5);
+    padding:20px 40px;
+    border-radius:15px;
+}
+
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:350px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+.info{
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+
 </head>
 <body>
-    <h1>Świat Rowerów</h1>
 
-    <h2>Witaj!</h2>
-    <p>Ta strona jest poświęcona rowerom i ich rodzajom.</p>
+<header>
+    <h1>ŚWIAT ROWERÓW</h1>
+</header>
 
-    <h2>Rodzaje rowerów</h2>
-    <ul>
-        <li>Rower górski (MTB)</li>
-        <li>Rower szosowy</li>
-        <li>Rower miejski</li>
-        <li>Rower elektryczny</li>
-    </ul>
+<nav>
+    <a href="#rodzaje">Rodzaje</a>
+    <a href="#ciekawostki">Ciekawostki</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
 
-    <h2>Ciekawostka</h2>
-    <p>Pierwsze rowery pojawiły się ponad 200 lat temu.</p>
+<section id="rodzaje">
+    <h2>Najpopularniejsze rodzaje rowerów</h2>
 
-    <footer>
-        <p>Autor: Seweryn</p>
-    </footer>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=900&q=80">
+            <h3>Rower Górski MTB</h3>
+            <p>Przeznaczony do jazdy po lesie, górach i trudnym terenie.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=900&q=80">
+            <h3>Rower Szosowy</h3>
+            <p>Idealny do szybkiej jazdy po asfaltowych drogach.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=900&q=80">
+            <h3>Rower Elektryczny</h3>
+            <p>Posiada wspomaganie silnikiem elektrycznym.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="ciekawostki">
+    <div class="info">
+        <h2>Ciekawostki o rowerach</h2>
+        <p><br>
+        🚴 Pierwszy rower powstał ponad 200 lat temu.<br><br>
+        🚴 Na świecie jest ponad miliard rowerów.<br><br>
+        🚴 Rekord prędkości na rowerze przekracza 280 km/h.<br><br>
+        🚴 Jazda na rowerze poprawia kondycję i zdrowie.
+        </p>
+    </div>
+</section>
+
+<section id="kontakt">
+    <div class="info">
+        <h2>O autorze</h2>
+        <p>Strona wykonana przez Seweryna na zajęcia informatyki.</p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Świat Rowerów
+</footer>
+
 </body>
 </html>
